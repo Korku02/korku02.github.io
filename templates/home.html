@@ -1,0 +1,33 @@
+
+<div class="section1 center" id = "section1" >
+  <div class="sec1-card-container" layout="row" layout-xs="column" >
+    <div class="  card-white sec1-card " layout="row" layout-wrap  layout-align = "" class = "">
+      <!-- <div class="about-us-head " layout="row">
+        <h1 class="">About Us</h1>
+      </div> -->
+
+          <div flex-gt-sm="33" flex="100" ng-repeat = "data in aboutUs2" class=" features   valign-wrapper" layout-align="left"  layout="column">
+            <i class={{data.icon}}></i>
+            <h1>{{data.name}}</h1>
+            <span class="not-visible" when-visible="ElementIn">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam
+            </span>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="section2"  id="section2">
+  <div class="" layout="row">
+    <div flex="50">
+      <canvas id="line" class="chart chart-line " chart-data="data"
+      chart-labels="labels" chart-series="series" chart-options="options"
+      chart-dataset-override="datasetOverride" chart-click="onClick" style="transform: rotateY(15deg);">
+      </canvas
+    </div>
+    <div class="" flex="50">
+
+    </div>
+  </div>
+
+</div>
